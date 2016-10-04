@@ -34,7 +34,8 @@ foreach ($html->find('table tr') as $e) {
 		array_push($platillos, $platillo);
 	}
 
-	$array[$header] = array_merge($platillos, $platillos);
+	//$array[$header] = array_merge($platillos, $platillos);
+	$array[ $header ] = $platillos;
 
 }
 header('Content-Type: application/json', true, 200);
@@ -54,8 +55,3 @@ function httpGet($url)
 }
 ?>
 
-string(30) "Sopas                        $"
-string(38) "&nbsp;                       Ensaladas"
-string(38) "&nbsp;                       Antojitos"
-string(37) "&nbsp;                       Guisados"
-string(36) "&nbsp;                       Postres"
